@@ -8,7 +8,7 @@ This project compares twelve GARCH-family specifications: GARCH(1,1), GARCH-in-m
 
 The evaluation loss function is not a neutral implementation detail. Under the non-robust MAE loss, asymmetric GED models appear significantly superior for SLV out-of-sample, contradicting the in-sample evidence. Under the proxy-robust QLIKE and MSE losses of Patton (2011), the effect vanishes entirely: no pairwise Diebold–Mariano comparison is significant at the 5% level. The apparent result was an artifact of the evaluation criterion: MAE's optimal forecast is the conditional *median* of the squared return, far below the conditional variance for fat-tailed returns, so it systematically rewards downward-biased volatility forecasts. For GS, by contrast, the asymmetric Student-t advantage survives robust evaluation: EGARCH+t significantly outperforms every symmetric specification under QLIKE.
 
-Full methodology, results, and discussion: [`garch_volatility_report.pdf`](garch_volatility_report.pdf).
+Full methodology, results, and discussion: [`garch_vol_report.pdf`](garch_vol_report.pdf).
 
 ## Reproducing the results
 
